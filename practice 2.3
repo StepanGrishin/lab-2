@@ -1,0 +1,14 @@
+var tupleArray: [(String, String)] = []
+
+let days = ["31", "29", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"]
+let month = ["Январе", "Феврале", "Марте", "Апреле", "Мае", "Июне", "Июле", "Августе", "Сентябре", "Октябре", "Ноябре", "Декабре"]
+
+for i in 0..<days.count {
+    let tuple = (month[i], days[i])
+    tupleArray.append(tuple)
+}
+
+// Выводим результат
+for tuple in tupleArray {
+    print(tuple)
+}
