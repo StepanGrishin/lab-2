@@ -1,0 +1,25 @@
+let days = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+let month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+let day = 7
+let mes = "Август" \\ Выбранная дата= 7 августа
+var sum = 0
+var counter:Int = 1
+for i in month
+{
+if (i == mes)
+    {
+        break;
+    }
+    else{
+    counter = counter + 1
+    }
+
+}
+
+for i in 0..<counter-1
+{
+sum = sum + days[i]
+}
+sum += day
+
+print(sum)
